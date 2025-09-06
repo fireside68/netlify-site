@@ -7,7 +7,7 @@
     Content-Security-Policy = """
       default-src 'self';
       img-src 'self' https: data:;
-      script-src 'self' https://challenges.cloudflare.com;
+      script-src 'self' https://challenges.cloudflare.com https://cdn.tailwindcss.com 'sha256-PSbJmyvxZNzvRDi+D/Qj0klN/RcQ2sw/ms/fz2MzO6Y=' 'sha256-STS9SqU0XU6MD9z/R5Vuu133130JZh3udAlYzLFvda4=' 'sha256-nwPXNc+uAdiUC0UUCofwdOcXZDkcEcJczCOMO8XfwJw=' 'sha256-ieoeWczDHkReVBsRBqaal5AFMlBtNjMzgwKvLqi/tSU=';
       style-src 'self' 'unsafe-inline';
       frame-src 'self' https://w.soundcloud.com https://challenges.cloudflare.com https://app.netlify.com;
       connect-src 'self';
