@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Unaffiliated Studios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: { 500: '#14b8a6' },
+            accent: { 500: '#eab308' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-white">
+  <nav class="fixed top-0 w-full z-50 glass-effect">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <a href="/"><img src="/assets/Just_The_U.png" alt="Unaffiliated Studios Logo" class="h-8 w-auto"></a>
+          </div>
+        </div>
+
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="/"
+              class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-primary-400 transition-colors">Home</a>
+            <a href="/about.html"
+              class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-primary-400 transition-colors">About</a>
+            <a href="/work.html"
+              class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-primary-400 transition-colors">Work</a>
+            <a href="/music.html"
+              class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-primary-400 transition-colors">Music</a>
+            <a href="/contact.html"
+              class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-primary-400 transition-colors">Contact</a>
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <button id="theme-toggle" class="mr-4 text-gray-400 hover:text-white focus:outline-none">
+            <svg id="theme-toggle-dark-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg id="theme-toggle-light-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 016.465 3.636l.707.707a1 1 0 01-1.414 1.414l-.707-.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1z"
+                fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="md:hidden">
+            <button id="mobile-menu-button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500">
+              <span class="sr-only">Open main menu</span>
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-800">
+        <a href="/"
+          class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary-400 transition-colors">Home</a>
+        <a href="/about.html"
+          class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary-400 transition-colors">About</a>
+        <a href="/work.html"
+          class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary-400 transition-colors">Work</a>
+        <a href="/music.html"
+          class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary-400 transition-colors">Music</a>
+        <a href="/contact.html"
+          class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary-400 transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="about" class="py-20 pt-32 bg-slate-200 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">About Us</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 animate-fade-in-left">
+          <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            We are a passionate team of developers, designers, and musicians dedicated to creating exceptional digital
+            experiences.
+          </p>
+
+          <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            Our mission is to combine technical expertise with creative vision to deliver innovative solutions that
+            resonate with users.
+          </p>
+
+          <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            Based in <span class="text-primary-400">Denver, Colorado</span>, we specialize in web development, UI/UX
+            design, and music production.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 animate-fade-in-right">
+          <div
+            class="bg-slate-300 dark:bg-slate-700 p-6 rounded-xl hover:bg-slate-400 dark:hover:bg-slate-600 transition-colors">
+            <div class="text-primary-400 mb-2">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Software Development</h3>
+            <p class="text-gray-600 dark:text-gray-400">Building robust and scalable web applications.</p>
+          </div>
+
+          <div
+            class="bg-slate-300 dark:bg-slate-700 p-6 rounded-xl hover:bg-slate-400 dark:hover:bg-slate-600 transition-colors">
+            <div class="text-primary-400 mb-2">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
+            <p class="text-gray-600 dark:text-gray-400">Creating intuitive and visually appealing user interfaces.</p>
+          </div>
+
+          <div
+            class="bg-slate-300 dark:bg-slate-700 p-6 rounded-xl hover:bg-slate-400 dark:hover:bg-slate-600 transition-colors">
+            <div class="text-primary-400 mb-2">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Music Production</h3>
+            <p class="text-gray-600 dark:text-gray-400">Composing and producing original electronic music.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-100 dark:bg-slate-900 py-8 text-center text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center space-x-6 text-sm">
+        <span>&copy; 2025 Unaffiliated Studios. All rights reserved.</span>
+        <span class="border-l border-slate-300 dark:border-slate-700"></span>
+        <a href="/privacy.html" class="hover:text-primary-400 transition-colors">Privacy Policy</a>
+      </div>
+      <p class="mt-4 text-sm">Built with <span class="text-red-500">❤️</span> and Tailwind CSS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
