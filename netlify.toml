@@ -4,8 +4,9 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' https://challenges.cloudflare.com https://cdn.tailwindcss.com https://www.googletagmanager.com 'sha256-PSbJmyvxZNzvRDi+D/Qj0klN/RcQ2sw/ms/fz2MzO6Y=' 'sha256-STS9SqU0XU6MD9z/R5Vuu133130JZh3udAlYzLFvda4=' 'sha256-nwPXNc+uAdiUC0UUCofwdOcXZDkcEcJczCOMO8XfwJw=' 'sha256-ieoeWczDHkReVBsRBqaal5AFMlBtNjMzgwKvLqi/tSU=' 'sha256-n4SYEKISdTzI/dAv41wUHcDoTqvZnaHL3Y86Izf/L3s=' 'sha256-V0BoN4zM0nzTUeFoc3UhsuMa6PR0TU5h47ObNoifv4c='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://challenges.cloudflare.com https://cdn.tailwindcss.com https://www.googletagmanager.com 'sha256-PSbJmyvxZNzvRDi+D/Qj0klN/RcQ2sw/ms/fz2MzO6Y=' 'sha256-STS9SqU0XU6MD9z/R5Vuu133130JZh3udAlYzLFvda4=' 'sha256-nwPXNc+uAdiUC0UUCofwdOcXZDkcEcJczCOMO8XfwJw=' 'sha256-ieoeWczDHkReVBsRBqaal5AFMlBtNjMzgwKvLqi/tSU=' 'sha256-n4SYEKISdTzI/dAv41wUHcDoTqvZnaHL3Y86Izf/L3s=' 'sha256-V0BoN4zM0nzTUeFoc3UhsuMa6PR0TU5h47ObNoifv4c=' 'sha256-c2dWDUQ8V93AxxltWyQu8GkcawnenZtXIWnsNaMPWHM='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "SAMEORIGIN"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    
